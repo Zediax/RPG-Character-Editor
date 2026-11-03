@@ -13,15 +13,15 @@ Stats::Stats(int _Stat, std::string _StatName){
 	StatName = _StatName;
 }
 
-Character::Character(std::string Name) {
+CharacterStats::CharacterStats(std::string Name) {
 	std::string CharacterName = Name;
 }
 
-void Character::SetStat(int Stat, std::string StatName) {
+void CharacterStats::SetStat(int Stat, std::string StatName) {
 	StatSheet.push_back(Stats(Stat, StatName));
 }
 
-void Character::PrintStatSheet() {
+void CharacterStats::PrintStatSheet() {
 	std::cout << "Character Name: " << CharacterName << "\n";
 	for (int i = 0; i < StatSheet.size(); i++) {
 		std::cout << "Stats: \n" << StatSheet[i].StatName << ": " << StatSheet[i].Stat << "\n";

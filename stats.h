@@ -10,10 +10,10 @@ struct Stats {
 	std::string StatName;
 };
 
-class Character {
+class CharacterStats {
 public:
-	Character();
-	Character(std::string Name);
+	CharacterStats();
+	CharacterStats(std::string Name);
 
 	void SetStat(int Stat, std::string StatName);
 	void PrintStatSheet();
