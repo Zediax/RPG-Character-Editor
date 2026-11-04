@@ -20,4 +20,4 @@ public:
 private:
 	std::vector<Stats> StatSheet;
 	std::string CharacterName;
-};
+};-
